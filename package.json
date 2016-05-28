@@ -1,8 +1,9 @@
 {
   "name": "sails-test-article",
+  "author": "Luis Lobo Borobia <luislobo@gmail.com>",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Sails Test Article",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -33,8 +34,7 @@
     "type": "git",
     "url": "git://github.com/lobo/sails-test-article.git"
   },
-  "author": "lobo",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.3",
