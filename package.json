@@ -25,7 +25,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha test"
   },
   "main": "app.js",
   "repository": {
@@ -33,5 +34,11 @@
     "url": "git://github.com/lobo/sails-test-article.git"
   },
   "author": "lobo",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0"
+  }
 }

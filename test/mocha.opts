@@ -1,0 +1,8 @@
+--require chai
+--require supertest
+--reporter spec
+--recursive
+--ui bdd
+--globals sails
+--timeout 5s
+--slow 2000
