@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for config/blueprints.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">config/</a> blueprints.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Blueprint API Configuration
+ * (sails.config.blueprints)
+ *
+ * These settings are for the global configuration of blueprint routes and
+ * request options (which impact the behavior of blueprint actions).
+ *
+ * You may also override any of these settings on a per-controller basis
+ * by defining a '_config' key in your controller definition, and assigning it
+ * a configuration object with overrides for the settings in this file.
+ * A lot of the configuration options below affect so-called "CRUD methods",
+ * or your controllers' `find`, `create`, `update`, and `destroy` actions.
+ *
+ * It's important to realize that, even if you haven't defined these yourself, as long as
+ * a model exists with the same name as the controller, Sails will respond with built-in CRUD
+ * logic in the form of a JSON API, including support for sort, pagination, and filtering.
+ *
+ * For more information on the blueprint API, check out:
+ * http://sailsjs.org/#!/documentation/reference/blueprint-api
+ *
+ * For more information on the settings in this file, see:
+ * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.blueprints.html
+ *
+ */
+&nbsp;
+module.exports.blueprints = {
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * Action routes speed up the backend development workflow by               *
+  * eliminating the need to manually bind routes. When enabled, GET, POST,   *
+  * PUT, and DELETE routes will be generated for every one of a controller's *
+  * actions.                                                                 *
+  *                                                                          *
+  * If an `index` action exists, additional naked routes will be created for *
+  * it. Finally, all `actions` blueprints support an optional path           *
+  * parameter, `id`, for convenience.                                        *
+  *                                                                          *
+  * `actions` are enabled by default, and can be OK for production--         *
+  * however, if you'd like to continue to use controller/action autorouting  *
+  * in a production deployment, you must take great care not to              *
+  * inadvertently expose unsafe/unintentional controller logic to GET        *
+  * requests.                                                                *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // actions: true,
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * RESTful routes (`sails.config.blueprints.rest`)                          *
+  *                                                                          *
+  * REST blueprints are the automatically generated routes Sails uses to     *
+  * expose a conventional REST API on top of a controller's `find`,          *
+  * `create`, `update`, and `destroy` actions.                               *
+  *                                                                          *
+  * For example, a BoatController with `rest` enabled generates the          *
+  * following routes:                                                        *
+  * :::::::::::::::::::::::::::::::::::::::::::::::::::::::                  *
+  *  GET /boat -&gt; BoatController.find                                        *
+  *  GET /boat/:id -&gt; BoatController.findOne                                 *
+  *  POST /boat -&gt; BoatController.create                                     *
+  *  PUT /boat/:id -&gt; BoatController.update                                  *
+  *  DELETE /boat/:id -&gt; BoatController.destroy                              *
+  *                                                                          *
+  * `rest` blueprint routes are enabled by default, and are suitable for use *
+  * in a production scenario, as long you take standard security precautions *
+  * (combine w/ policies, etc.)                                              *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // rest: true,
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * Shortcut routes are simple helpers to provide access to a                *
+  * controller's CRUD methods from your browser's URL bar. When enabled,     *
+  * GET, POST, PUT, and DELETE routes will be generated for the              *
+  * controller's`find`, `create`, `update`, and `destroy` actions.           *
+  *                                                                          *
+  * `shortcuts` are enabled by default, but should be disabled in            *
+  * production.                                                              *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // shortcuts: true,
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * An optional mount path for all blueprint routes on a controller,         *
+  * including `rest`, `actions`, and `shortcuts`. This allows you to take    *
+  * advantage of blueprint routing, even if you need to namespace your API   *
+  * methods.                                                                 *
+  *                                                                          *
+  * (NOTE: This only applies to blueprint autoroutes, not manual routes from *
+  * `sails.config.routes`)                                                   *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // prefix: '',
+&nbsp;
+  /***************************************************************************
+   *                                                                          *
+   * An optional mount path for all REST blueprint routes on a controller.    *
+   * And it do not include `actions` and `shortcuts` routes.                  *
+   * This allows you to take advantage of REST blueprint routing,             *
+   * even if you need to namespace your RESTful API methods                   *
+   *                                                                          *
+   ***************************************************************************/
+&nbsp;
+  // restPrefix: '',
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * Whether to pluralize controller names in blueprint routes.               *
+  *                                                                          *
+  * (NOTE: This only applies to blueprint autoroutes, not manual routes from *
+  * `sails.config.routes`)                                                   *
+  *                                                                          *
+  * For example, REST blueprints for `FooController` with `pluralize`        *
+  * enabled:                                                                 *
+  * GET /foos/:id?                                                           *
+  * POST /foos                                                               *
+  * PUT /foos/:id?                                                           *
+  * DELETE /foos/:id?                                                        *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // pluralize: false,
+&nbsp;
+  /***************************************************************************
+  *                                                                          *
+  * Whether the blueprint controllers should populate model fetches with     *
+  * data from other models which are linked by associations                  *
+  *                                                                          *
+  * If you have a lot of data in one-to-many associations, leaving this on   *
+  * may result in very heavy api calls                                       *
+  *                                                                          *
+  ***************************************************************************/
+&nbsp;
+  // populate: true,
+&nbsp;
+  /****************************************************************************
+  *                                                                           *
+  * Whether to run Model.watch() in the find and findOne blueprint actions.   *
+  * Can be overridden on a per-model basis.                                   *
+  *                                                                           *
+  ****************************************************************************/
+&nbsp;
+  // autoWatch: true,
+&nbsp;
+  /****************************************************************************
+  *                                                                           *
+  * The default number of records to show in the response from a "find"       *
+  * action. Doubles as the default size of populated arrays if populate is    *
+  * true.                                                                     *
+  *                                                                           *
+  ****************************************************************************/
+&nbsp;
+  // defaultLimit: 30
+&nbsp;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat May 28 2016 02:49:07 GMT-0300 (ART)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
